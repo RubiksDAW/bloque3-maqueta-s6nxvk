@@ -27,6 +27,7 @@
           name="apellidos"
           id="apellidos"
           placeholder="Apellidos..."
+          pattern="[A-Za-z ]+"
         /><br /><br />
 
         <label for="edad">Edad</label>
@@ -60,6 +61,7 @@
           name="via"
           id="via"
           placeholder="Calle, Avenida, Plaza..."
+          pattern="[A-Za-z ]+"
           tabindex="1"
         /><br /><br />
 
@@ -69,6 +71,7 @@
           name="nombreVia"
           id="nombreVia"
           placeholder="Nombre vía..."
+          pattern="[A-Za-z ]+"
         /><br /><br />
 
         <label for="portal">Portal:</label>
@@ -77,11 +80,12 @@
           name="portal"
           id="portal"
           placeholder="Portal..."
+          pattern="[A-Za-z ]+"
         /><br /><br />
 
         <label for="planta">Planta:</label>
         <input
-          type="text"
+          type="number"
           name="planta"
           id="planta"
           placeholder="Planta......"
@@ -236,7 +240,7 @@
           type="email"
           name="email"
           id="email"
-          placeholder="Email..."
+          placeholder="user@example.es"
         /><br /><br />
 
         <label for="telefono">Teléfono:</label>
@@ -327,6 +331,7 @@
           id="observaciones"
           name="observaciones"
           size="100"
+          maxlength="500"
           placeholder="Déjanos algo que quieras compartir con nosotros..."
         ></textarea>
       </fieldset>
