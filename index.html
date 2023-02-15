@@ -19,6 +19,7 @@
           id="nombre"
           placeholder="Nombre..."
           pattern="[A-Za-z ]+"
+          required="required"
         /><br /><br />
 
         <label for="apellidos">Apellidos</label>
@@ -28,6 +29,7 @@
           id="apellidos"
           placeholder="Apellidos..."
           pattern="[A-Za-z ]+"
+          required="required"
         /><br /><br />
 
         <label for="edad">Edad</label>
@@ -37,6 +39,7 @@
           id="edad"
           min="0"
           max="150"
+          required="required"
         /><br /><br />
 
         <div>
@@ -49,7 +52,12 @@
         </div>
         <br />
         <label for="nacimiento">Fecha de nacimiento</label>
-        <input type="date" name="nacimiento" id="nacimiento" />
+        <input
+          type="date"
+          name="nacimiento"
+          id="nacimiento"
+          required="required"
+        />
       </fieldset>
 
       <fieldset>
@@ -63,6 +71,7 @@
           placeholder="Calle, Avenida, Plaza..."
           pattern="[A-Za-z ]+"
           tabindex="1"
+          required="required"
         /><br /><br />
 
         <label for="nombreVia">Nombre:</label>
@@ -72,6 +81,7 @@
           id="nombreVia"
           placeholder="Nombre vía..."
           pattern="[A-Za-z ]+"
+          required="required"
         /><br /><br />
 
         <label for="portal">Portal:</label>
@@ -81,6 +91,7 @@
           id="portal"
           placeholder="Portal..."
           pattern="[A-Za-z ]+"
+          required="required"
         /><br /><br />
 
         <label for="planta">Planta:</label>
@@ -100,11 +111,16 @@
         /><br /><br />
 
         <label for="codigo">Código postal:</label>
-        <input type="number" name="codigo" id="codigo" /><br /><br />
+        <input
+          type="number"
+          name="codigo"
+          id="codigo"
+          required="required"
+        /><br /><br />
 
         <div>
           <label for="provincia">Provincia:</label>
-          <select required name="provincia" id="provincia">
+          <select required="required" name="provincia" id="provincia">
             <optgroup label="Selecciona una provincia">
               <option value="selecciona" disabled selected>
                 Elige Provincia
@@ -229,6 +245,7 @@
           name="localidad"
           id="localidad"
           placeholder="Localidad..."
+          required="required"
         /><br /><br />
       </fieldset>
 
@@ -241,6 +258,7 @@
           name="email"
           id="email"
           placeholder="user@example.es"
+          required="required"
         /><br /><br />
 
         <label for="telefono">Teléfono:</label>
@@ -249,6 +267,8 @@
           name="telefono"
           id="telefono"
           pattern="[0-9]{9}"
+          placeholder="(+34) 676 588 232"
+          required="required"
         /><br /><br />
 
         <label for="imagen">Sube tu imagen (solo JPG o PNG, máximo 1MB):</label>
