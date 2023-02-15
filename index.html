@@ -240,7 +240,12 @@
         /><br /><br />
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" /><br /><br />
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          pattern="[0-9]{9}"
+        /><br /><br />
 
         <label for="imagen">Sube tu imagen (solo JPG o PNG, máximo 1MB):</label>
         <input
