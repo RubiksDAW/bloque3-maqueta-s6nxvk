@@ -18,7 +18,7 @@
           name="nombre"
           id="nombre"
           placeholder="Nombre..."
-          pattern="[A-Za-z ]+"
+          pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]+$"
           required="required"
         /><br /><br />
 
@@ -260,6 +260,7 @@
           id="email"
           placeholder="user@example.es"
           required="required"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         /><br /><br />
 
         <label for="telefono">Teléfono:</label>
